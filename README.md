@@ -13,5 +13,5 @@ DB, Table Create
 Content Input  
 <img src="./image/content insert.png" width="40%"/> <img src="./image/insert success.png" width="40%"/>  
   
-Content Inquiry
+Content Inquiry  
 <img src="./image/db inquiry.png" width="30%"/> <img src="./image/db inquiry2.png" width="30%"/> <img src="./image/db inquiry3.png" width="30%"/>
