@@ -17,4 +17,4 @@ Content Inquiry
 <img src="./image/db inquiry.png" width="30%"/> <img src="./image/db inquiry2.png" width="30%"/> <img src="./image/db inquiry3.png" width="30%"/>
   
 Table Delete  
-<img src="./image/content table delete.png" width="40%"/>
+<img src="./image/table delete.png" width="40%"/>
