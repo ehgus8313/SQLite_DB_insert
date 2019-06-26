@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+	<TextView
+		android:text="SQLite Database 저장하기"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/textView"
+		android:gravity="center"
+		android:textSize="20dp"
+		android:textColor="#000000"/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+
+
+		<Button
+			android:id="@+id/createDatabaseBtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="데이터베이스 생성"
+			android:layout_weight="2"
+			android:layout_marginTop="10dp"
+			android:textSize="14dp"
+			/>
+
+		<EditText
+			android:id="@+id/databaseNameInput"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_weight="8"
+			android:hint="데이터베이스 이름 입력"
+			android:text="customer.db"
+			android:textSize="18dp" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/createTableBtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			android:text="테이블 생성"
+			android:layout_marginTop="10dp"
+			android:layout_below="@+id/databaseNameInput"
+			android:textSize="14dp"
+			/>
+
+		<EditText
+			android:id="@+id/tableNameInput"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_weight="8"
+			android:hint="테이블 이름을 입력"
+			android:text="employee"
+			android:textSize="18dp" />
+	</LinearLayout>
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:hint="Enter Name"
+		android:ems="10"
+		android:layout_marginTop="10dp"
+		android:id="@+id/editText"
+		android:layout_centerHorizontal="true"
+		android:gravity="center"/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="phone"
+		android:hint="Enter Phone Number"
+		android:gravity="center"
+		android:ems="10"
+		android:layout_below="@+id/editText"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:id="@+id/editText2" />
+
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="phone"
+		android:hint="Enter Your Age"
+		android:gravity="center"
+		android:ems="10"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:id="@+id/editText3" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+		<Button
+			android:text="Insert db"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="10dp"
+			android:id="@+id/button" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+
+
+
+		<Button
+		android:text="DB 조회"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:id="@+id/view" />
+
+		<Button
+			android:text="DB 삭제"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="10dp"
+			android:id="@+id/delete" />
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/status"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="상태 : "
+		android:textSize="14dp"
+		android:paddingLeft="10dp"
+		android:layout_marginTop="10dp"
+		/>
+</LinearLayout>
+</ScrollView>

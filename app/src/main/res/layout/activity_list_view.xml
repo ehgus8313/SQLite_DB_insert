@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/input01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="데이터베이스 이름 입력"
+            android:text="customer.db"
+            android:textSize="16dp"
+            >
+        </EditText>
+        <EditText
+            android:id="@+id/input02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="테이블 이름 입력"
+            android:text="employee"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/queryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="조회하기"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="조건 검색"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/searchinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="나이 입력"
+            android:text="age"
+            android:visibility="gone"
+            android:textSize="16dp"/>
+
+        <Button
+            android:id="@+id/joBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff99ccee"
+            android:textColor="#ff0000ff"
+            android:textSize="14dp"
+            >
+        </TextView>
+    </ScrollView>
+
+</LinearLayout>
